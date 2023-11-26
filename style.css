@@ -278,22 +278,22 @@ header nav ul li .active {
     margin-top: 7.5vh;
 }
 
-#app .api {
+.app .api {
     padding-top: 80px;
     padding-bottom: 30px;
     font-size: 50px;
 }
-#app .box {
+.app .box {
     box-shadow: 5px 5px 20px #eee, -5px -5px 20px #eee;
     padding: 20px;
     display: inline-block;
     background-color: antiquewhite;
     margin-bottom: 25px;
 }
-#app h3 {
+.app h1 {
     color: #eee;
 }
-#app {
+.app {
     margin: 0 auto;
     text-align: center;
     background: #191919;
@@ -302,7 +302,7 @@ header nav ul li .active {
     font-family: "Fira Code";
 }
 
-#app .form .keyword {
+.app .form .keyword {
     padding: 5px 10px;
     border-top-left-radius: 10px;
     border-bottom-right-radius: 10px;
@@ -310,7 +310,7 @@ header nav ul li .active {
     width: 300px;
 }
 
-#app .form .btn-search {
+.app .form .btn-search {
     padding: 5px 10px;
     border: none;
     cursor: pointer;
@@ -321,11 +321,11 @@ header nav ul li .active {
     transition: 0.2s;
 }
 
-#app .form .btn-search:hover {
+.app .form .btn-search:hover {
     opacity: 0.8;
 }
 
-#app .form .btn-search:focus {
+.app .form .btn-search:focus {
     outline: #f9004d solid 2px;
     outline-offset: 2px;
 }
