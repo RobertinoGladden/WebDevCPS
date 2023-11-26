@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f5f5f5;
+}
+
+header {
+    height: 100vh;
+    padding: 36px 100px;
+    width: 100vw;
+    margin-top: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 90%;
+    z-index: 99;
+}
+
+header nav ul {
+    display: flex;
+}
+
+header nav ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px 20px;
+}
+
+header nav ul li a {
+    color: #212121;
+    text-decoration: none;
+    transition: all ease 0.5s;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header nav ul li a:hover {
+    color: #fec86a;
+    font-weight: bold;
+}
+
+header nav ul li .active {
+    color: #fec86a;
+    font-weight: bold;
+}
+
+.landing {
+    display: flex;
+    height: 90vh;
+    background-color: transparent;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.landing .intro {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing .intro h3 {
+    color: #212121;
+    font-weight: 400;
+    font-size: 32px;
+    margin-left: 10vw;
+}
+
+.landing .intro h3 span {
+    color: #212121;
+    font-weight: 600;
+    font-size: 3.5rem;
+}
+
+.intro button {
+    height: 48px;
+    width: 144px;
+    margin-top: 2.5vh;
+    margin-left: 10vw;
+    background-color: transparent;
+    border: 2px solid #212121;
+    border-radius: 8px;
+    color: #212121;
+    font-size: 16px;
+    transition: all ease 0.5s;
+}
+
+.intro button:hover {
+    background-color: #fec86a;
+    color: #212121;
+}
+
+.strict {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin-top: 50vh;
+}
+
+.strict .line {
+    background-color: #212121;
+    height: 40vh;
+    width: 2.5px;
+}
+
+.strict i {
+    color: #212121;
+    font-size: 36px;
+}
+
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+    height: 100vh;
+}
+
+.about h1 {
+    font-size: 56px;
+    font-weight: 700;
+    color: #212121;
+    font-family: "Roboto", serif;
+}
+
+.about-cards {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    gap: 2.5vh;
+}
+
+.about-card {
+    position: relative;
+    height: 20vw;
+    width: 20vw;
+    background-color: #212121;
+    border-radius: 20px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5vh;
+    transition: all ease 0.5s;
+}
+
+.about-card img {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.about-card .overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2.5vh;
+    height: 30vw;
+    width: 30vw;
+    background-color: #34353ba2;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    opacity: 0;
+    transition: all ease 0.5s;
+}
+
+.about-card .overlay h3 {
+    color: #f5f5f5;
+    font-size: 40px;
+    text-align: center;
+}
+
+.about-card .overlay h4 {
+    color: #f5f5f5;
+    font-size: 20px;
+    text-align: center;
+}
+
+.about-card .overlay button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 144px;
+    background-color: #f5f5f5;
+    border: 2px solid #f5f5f5;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+
+.about-card .overlay button a {
+    text-decoration: none;
+    color: #212121;
+    font-weight: 400;
+}
+
+.about-card .overlay:hover {
+    opacity: 1;
+}
+
+.about button {
+    margin-top: 50px;
+    height: 48px;
+    width: 144px;
+    background-color: #f5f5f5;
+    border: 2px solid #212121;
+    border-radius: 8px;
+    color: #212121;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+
+.about button:hover {
+    background-color: #fec86a;
+    border: 2px solid #212121;
+}
+.contact-me {
+    width: 100vw;
+    padding: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #212121;
+}
+
+.contact-me h1 {
+    font-size: 56px;
+    color: #f5f5f5;
+    font-family: "Roboto", serif;
+    font-weight: 700;
+}
+
+.contact {
+    display: flex;
+    gap: 24px;
+}
+
+.contact-card {
+    background-color: #fec86a;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    gap: 10px;
+    margin-top: 7.5vh;
+}
+
+#app .api {
+    padding-top: 80px;
+    padding-bottom: 30px;
+    font-size: 50px;
+}
+#app .box {
+    box-shadow: 5px 5px 20px #eee, -5px -5px 20px #eee;
+    padding: 20px;
+    display: inline-block;
+    background-color: antiquewhite;
+    margin-bottom: 25px;
+}
+#app h3 {
+    color: #eee;
+}
+#app {
+    margin: 0 auto;
+    text-align: center;
+    background: #191919;
+    height: 1000px;
+    color: #eee;
+    font-family: "Fira Code";
+}
+
+#app .form .keyword {
+    padding: 5px 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: none;
+    width: 300px;
+}
+
+#app .form .btn-search {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #f9004d;
+    color: #eee;
+    border-radius: 7px;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+
+#app .form .btn-search:hover {
+    opacity: 0.8;
+}
+
+#app .form .btn-search:focus {
+    outline: #f9004d solid 2px;
+    outline-offset: 2px;
+}
+
+#container {
+    margin-top: 20px;
+}
