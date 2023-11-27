@@ -6,7 +6,7 @@ const container = document.getElementById("container");
 
 btnSearch.onclick = () => {
   const keyword = keywordInput.value;
-  fetch(`${dataEndpoint}/${keyword}`) // Mengirim permintaan ke endpoint API berdasarkan ID
+  fetch(`${dataEndpoint}`) // Mengirim permintaan ke endpoint API berdasarkan ID
     .then((res) => res.json())
     .then((data) => {
       console.log(data);
