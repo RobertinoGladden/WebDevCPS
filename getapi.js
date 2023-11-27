@@ -1,21 +1,23 @@
-const dataEndpoint = "https://backend-a1mv0rjx6-robertinogladden.vercel.app/api/"; // Ubah sesuai dengan endpoint yang benar dari API provinsi sampai desa
+const dataEndpoint = "https://backend-a1mv0rjx6-robertinogladden.vercel.app/api/";
 
-const keywordInput = document.querySelector(".keyword");
 const btnSearch = document.querySelector(".btn-search");
 const container = document.getElementById("container");
 
-btnSearch.onclick = () => {
-  const keyword = keywordInput.value;
-  fetch(`${dataEndpoint}`) // Mengirim permintaan ke endpoint API berdasarkan ID
-    .then((res) => res.json())
-    .then((data) => {
-      console.log(data);
-      container.innerHTML = showElement(data);
-    })
-    .catch((error) => {
-      console.error("Error fetching data:", error);
-      container.innerHTML = "<p>Data not found.</p>";
-    });
+btnSearch.onclick = async () => {
+  try {
+    const response = await fetch(dataEndpoint);
+    if (!response.ok) {
+      throw new Error('Failed to fetch data');
+    }
+
+    const data = await response.json();
+    console.log(data); // Menampilkan data di konsol
+
+    container.innerHTML = showElement(data);
+  } catch (error) {
+    console.error("Error fetching data:", error);
+    container.innerHTML = "<p>Data not found.</p>";
+  }
 };
 
 function showElement(data) {
