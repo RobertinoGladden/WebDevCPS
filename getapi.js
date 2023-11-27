@@ -2,10 +2,12 @@ const dataEndpoint = "https://backend-a1mv0rjx6-robertinogladden.vercel.app/api/
 
 const btnSearch = document.querySelector(".btn-search");
 const container = document.getElementById("container");
+const inputId = document.querySelector("#input-id");
 
 btnSearch.onclick = async () => {
   try {
-    const response = await fetch(dataEndpoint);
+    const id = inputId.value; // Mendapatkan ID dari input field
+    const response = await fetch(`${dataEndpoint}${id}`);
     if (!response.ok) {
       throw new Error('Failed to fetch data');
     }
