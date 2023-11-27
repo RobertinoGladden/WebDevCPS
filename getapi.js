@@ -2,7 +2,7 @@ const dataEndpoint = "https://backend-a1mv0rjx6-robertinogladden.vercel.app/api/
 
 const btnSearch = document.querySelector(".btn-search");
 const container = document.getElementById("container");
-const inputId = document.querySelector(".keyword");
+const keywordInput = document.querySelector(".keyword");
 
 btnSearch.onclick = () => {
   const keyword = keywordInput.value;
