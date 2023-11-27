@@ -5,7 +5,7 @@ const container = document.getElementById("container");
 const inputId = document.querySelector(".keyword");
 
 btnSearch.onclick = () => {
-  const keyword = keywordaInput.value;
+  const keyword = keywordInput.value;
   fetch(`${dataEndpoint}/./${keyword}`)
     .then((res) => res.json())
     .then((data) =>{
