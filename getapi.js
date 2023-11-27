@@ -1,4 +1,4 @@
-const dataEndpoint = "http://localhost:3000/api"; // Ubah sesuai dengan endpoint yang benar dari API provinsi sampai desa
+const dataEndpoint = "https://backend-a1mv0rjx6-robertinogladden.vercel.app/api/"; // Ubah sesuai dengan endpoint yang benar dari API provinsi sampai desa
 
 const keywordInput = document.querySelector(".keyword");
 const btnSearch = document.querySelector(".btn-search");
